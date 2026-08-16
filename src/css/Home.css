@@ -31,16 +31,19 @@
 
 .search-button {
   padding: 0.75rem 1.5rem;
-  background-color: #e50914;
+  background-color: #6b5064;
   color: white;
   border-radius: 4px;
   font-weight: 500;
   transition: background-color 0.2s;
   white-space: nowrap;
+  border: none;
 }
 
 .search-button:hover {
-  background-color: #f40612;
+  background-color: #6b50649a;
+  outline: none;
+  border: none;
 }
 
 @media (max-width: 639px) {
@@ -50,6 +53,17 @@
 
   .search-form {
     margin-bottom: 1rem;
+    gap: 0.5rem;
+    padding: 0rem;
+  }
+  .search-input {
+    padding: 0.75rem 1rem;
+    font-size: 0.6rem;
+  }
+
+  .search-button {
+    font-size: 0.6rem;
+    padding: 0.75rem 1rem;
   }
 }
 
@@ -60,4 +74,11 @@
   padding: 1rem;
   width: 100%;
   box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+  .movies-grid {
+    grid-template-columns: minmax(0, 350px);
+    justify-content: center;
+  }
 }
